@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,26 +24,26 @@
       <div class="container header-container">
         <nav class="navigation-header">
           <a href="./index.html" class="logo"
-            ><span class="web">Web</span>Studio</a
+            ><span class="logo__web">Web</span>Studio</a
           >
           <ul class="menu-list">
-            <li class="header-item">
-              <a href="./index.html" class="link current">Студія</a>
+            <li class="menu-list__item">
+              <a href="./index.html" class="link menu-list__current">Студія</a>
             </li>
-            <li class="header-item">
+            <li class="menu-list__item">
               <a href="./portpholio.html" class="link">Портфоліо</a>
             </li>
-            <li class="header-item">
+            <li class="menu-list__item">
               <a href="#adresa" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="menu-list">
-          <li class="phone-email-header">
+          <li class="menu-list__item">
             <a href="mailto:info@devstudio.com" class="email">
               <svg
                 aria-label="почта"
-                class="icon-header"
+                class="menu-list__icon"
                 width="22"
                 height="18"
               >
@@ -51,11 +52,11 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="phone-email-header">
+          <li class="menu-list__item">
             <a href="tel:+380961111111" class="phone">
               <svg
                 aria-label="мобільний телефон"
-                class="icon-header"
+                class="menu-list__icon"
                 width="14"
                 height="20"
               >
@@ -73,78 +74,79 @@
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn" data-modal-open>
+          <button type="button" class="btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <section id="features" class="features">
+      <!-- ------FEATURES------ -->
+      <section id="features" class="features-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list features-list">
-            <li class="features-li">
-              <div class="features-div">
+            <li class="features-list__item">
+              <div class="features-list__img">
                 <svg
                   aria-label="антена"
-                  class="icon-features"
+                  class="features-list__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-feature1"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Увага до деталей</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Увага до деталей</h3>
+              <p class="features-list__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="features-li">
-              <div class="features-div">
+            <li class="features-list__item">
+              <div class="features-list__img">
                 <svg
                   aria-label="годинник"
-                  class="icon-features"
+                  class="features-list__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-feature2"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Пунктуальність</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Пунктуальність</h3>
+              <p class="features-list__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="features-li">
-              <div class="features-div">
+            <li class="features-list__item">
+              <div class="features-list__img">
                 <svg
                   aria-label="графік"
-                  class="icon-features"
+                  class="features-list__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-feature3"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Планування</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Планування</h3>
+              <p class="features-list__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="features-li">
-              <div class="features-div">
+            <li class="features-list__item">
+              <div class="features-list__img">
                 <svg
                   aria-label="космонавт"
-                  class="icon-features"
+                  class="features-list__icon"
                   width="70"
                   height="70"
                 >
                   <use href="./images/sprite.svg#icon-feature4"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Сучасні технології</h3>
-              <p class="features-text">
+              <h3 class="features-list__title">Сучасні технології</h3>
+              <p class="features-list__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -155,9 +157,9 @@
       <!-- what-we-do -->
       <section class="what-we-do-section section">
         <div class="container">
-          <h2 class="what-we-do-title">Чим ми займаємося</h2>
+          <h2 class="title">Чим ми займаємося</h2>
           <ul class="list list-wrap">
-            <li class="what-we-do-card">
+            <li class="what-we-do__card">
               <img
                 src="./images/photo1.jpg"
                 alt="Написання програм"
@@ -165,11 +167,11 @@
                 height="294"
                 class="photo1"
               />
-              <div class="what-we-do-bg">
-                <p class="what-we-do-text">Десктопні додатки</p>
+              <div class="what-we-do__bg">
+                <p class="what-we-do__text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="what-we-do-card">
+            <li class="what-we-do__card">
               <img
                 src="./images/photo2.jpg"
                 alt="Створення додатків для смартфону"
@@ -177,11 +179,11 @@
                 height="294"
                 class="photo2"
               />
-              <div class="what-we-do-bg">
-                <p class="what-we-do-text">Мобільні додатки</p>
+              <div class="what-we-do__bg">
+                <p class="what-we-do__text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="what-we-do-card">
+            <li class="what-we-do__card">
               <img
                 src="./images/photo3.jpg"
                 alt="Створення дизайну"
@@ -189,34 +191,34 @@
                 height="294"
                 class="photo3"
               />
-              <div class="what-we-do-bg">
-                <p class="what-we-do-text">Дизайнерські рішення</p>
+              <div class="what-we-do__bg">
+                <p class="what-we-do__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- team -->
-      <section class="our-team section">
+      <section class="team section">
         <div class="container">
-          <h2 class="our-team-title">Наша команда</h2>
-          <ul class="list list-wrap">
-            <li class="our-team-data">
+          <h2 class="title">Наша команда</h2>
+          <ul class="list team__list">
+            <li class="team__card">
               <img
                 src="./images/demyanenko.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
               />
-              <div class="team-div">
-                <h3 class="our-teammate">Ігор Дем'яненко</h3>
-                <p class="our-team-position" lang="en">Product Designer</p>
-                <ul class="list team-ul">
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+              <div class="team__data">
+                <h3 class="team__teammate">Ігор Дем'яненко</h3>
+                <p class="team__position" lang="en">Product Designer</p>
+                <ul class="list social-networks">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="інстаграм"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -224,11 +226,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="твітер"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -236,11 +238,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="фейсбук"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -248,11 +250,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="лінкелін"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -263,22 +265,22 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team-data">
+            <li class="team__card">
               <img
                 src="./images/repina.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
                 height="260"
               />
-              <div class="team-div">
-                <h3 class="our-teammate">Ольга Рєпіна</h3>
-                <p class="our-team-position" lang="en">Frontend Developer</p>
-                <ul class="list team-ul">
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+              <div class="team__data">
+                <h3 class="team__teammate">Ольга Рєпіна</h3>
+                <p class="team__position" lang="en">Frontend Developer</p>
+                <ul class="list social-networks">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="інстаграм"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -286,11 +288,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="твітер"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -298,11 +300,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="фейсбук"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -310,11 +312,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="лінкелін"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -325,22 +327,22 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team-data">
+            <li class="team__card">
               <img
                 src="./images/tarasov.jpg"
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
               />
-              <div class="team-div">
-                <h3 class="our-teammate">Микола Тарасов</h3>
-                <p class="our-team-position" lang="en">Marketing</p>
-                <ul class="list team-ul">
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+              <div class="team__data">
+                <h3 class="team__teammate">Микола Тарасов</h3>
+                <p class="team__position" lang="en">Marketing</p>
+                <ul class="list social-networks">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="інстаграм"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -348,11 +350,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="твітер"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -360,11 +362,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="фейсбук"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -372,11 +374,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="лінкелін"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -387,22 +389,22 @@
                 </ul>
               </div>
             </li>
-            <li class="our-team-data">
+            <li class="team__card">
               <img
                 src="./images/yermakov.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
                 height="260"
               />
-              <div class="team-div">
-                <h3 class="our-teammate">Михайло Єрмаков</h3>
-                <p class="our-team-position" lang="en">UI Designer</p>
-                <ul class="list team-ul">
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+              <div class="team__data">
+                <h3 class="team__teammate">Михайло Єрмаков</h3>
+                <p class="team__position" lang="en">UI Designer</p>
+                <ul class="list social-networks">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="інстаграм"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -410,11 +412,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="твітер"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -422,11 +424,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="фейсбук"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -434,11 +436,11 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-link-li">
-                    <a href="#" class="team-link">
+                  <li class="social-networks__item">
+                    <a href="#" class="social-networks__link">
                       <svg
                         arial-label="лінкедін"
-                        class="icon-team"
+                        class="social-networks__icon"
                         width="20"
                         height="20"
                       >
@@ -456,7 +458,7 @@
       <!-- OUR CLIENTS -->
       <section class="section">
         <div class="container">
-          <h2 class="our-clients-title">Постійні клієнти</h2>
+          <h2 class="title">Постійні клієнти</h2>
           <ul class="list clients-ul">
             <li class="clients-list">
               <a href="#" class="client-link">
@@ -540,7 +542,7 @@
       <div class="container footer-container">
         <div class="neigborhood">
           <a href="./index.html" class="logo"
-            ><span class="web">Web</span
+            ><span class="logo__web">Web</span
             ><span class="studio-footer">Studio</span></a
           >
           <address class="address-data" id="adresa">
@@ -754,7 +756,7 @@
               >Умови договору</a
             >
           </label>
-          <button type="submit" class="modal-form-submit hero-btn">
+          <button type="submit" class="modal-form-submit btn">
             Відправити
           </button>
         </form>
