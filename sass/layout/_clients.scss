@@ -14,16 +14,20 @@
     justify-content: center;
     align-items: center;
     transition: color var(--trnsform-cubic);
+
+     &:hover,
+     &:focus {
+    color: var(--accent-color);
+  }
+
   }
   .clients__img{
     fill: currentColor;
     transition: fill var(--trnsform-cubic);
-  }
-  .clients__link:hover,
-  .clients__link:focus {
-    color: var(--accent-color);
-  }
-  .clients__img:hover,
-  .clients__img:focus {
+    
+      &:hover,
+      &:focus {
     fill: currentColor;
   }
+  }
+ 

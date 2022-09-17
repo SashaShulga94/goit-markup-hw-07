@@ -68,12 +68,17 @@
   .project-link {
     display: block;
     transition: box-shadow var(--trnsform-cubic);
-  }
-  .project-link:hover,
-  .project-link:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+     &:hover .portfolio-overlay,
+     &:focus .portfolio-overlay {
+    transform: translateY(0%);
+  }
+  }
+  
   .portfolio-div-overlay {
     position: relative;
     overflow: hidden;
@@ -95,8 +100,5 @@
     padding: 63px 24px;
     color: var(--primary-text-color-theme-light);
   }
-  .project-link:hover .portfolio-overlay,
-  .project-link:focus .portfolio-overlay {
-    transform: translateY(0%);
-  }
+ 
   

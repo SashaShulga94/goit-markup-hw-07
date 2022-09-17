@@ -13,6 +13,15 @@
     line-height: 1.71;
     color: var(--secondary-text-color-4footer-gray);
     transition: color var(--trnsform-cubic);
+
+      
+  &:hover,
+  &:hover,
+  &:focus,
+  &:focus {
+    color: var(--accent-color);
+  }
+  
   }
   .address-data {
     margin-top: 20px;
