@@ -29,13 +29,13 @@
 
 /* ----------------------OUR CLIENTS------------------ */
 
-.clients-ul {
+.clients {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client-link {
+.clients__link {
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -46,16 +46,16 @@
   align-items: center;
   transition: color var(--trnsform-cubic);
 }
-.icon-clients {
+.clients__img{
   fill: currentColor;
   transition: fill var(--trnsform-cubic);
 }
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--accent-color);
 }
-.icon-clients:hover,
-.icon-clients:focus {
+.clients__img:hover,
+.clients__img:focus {
   fill: currentColor;
 }
 
